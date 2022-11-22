@@ -33,11 +33,11 @@ def geticao(ICAO):
     result = cursor_fetchall(query)
     for row in result:
         name = row[0]
-        munici = row[1]
+        municipality = row[1]
     json = {
         "ICAO": "EFHK",
         "name": name,
-        "Municipality": munici
+        "Municipality": municipality
     }
     return json
 
